@@ -22,7 +22,7 @@ print(f"Normalized min: {data.min()}, max: {data.max()}")
 
 # Option 1: Use the first 4410 samples (0.1s) instead of energy-based selection
 window_size = 4410  # ~0.1s at 44100 Hz
-segment = data[:window_size]  # Take the beginning
+segment = data[:window_size]  # Take the beginning 
 
 # Option 2: (Uncomment to test) Keep energy-based but start from the beginning if energy is low
 """
