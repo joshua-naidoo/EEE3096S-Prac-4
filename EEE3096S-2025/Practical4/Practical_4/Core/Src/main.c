@@ -4078,7 +4078,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void EXTI0_IRQHandler(void){
   static uint32_t lastTick = 0;
-  if (HAL_GetTick() - lastTick < 50) {
+  if (HAL_GetTick() - lastTick < 200) {
     HAL_GPIO_EXTI_IRQHandler(Button0_Pin);
     return;
   }
